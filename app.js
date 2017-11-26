@@ -12,4 +12,9 @@ app.get('/', function(req, res){
 
 io.on('connection' , function(socket){
     console.log('user connected')
+    console.log(socket.id)
+    socket.on('mouse',mouseMsg);
+    function mouseMsg(data){
+        console.log(data)
+    }
 })
