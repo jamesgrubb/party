@@ -1,0 +1,25 @@
+{
+  "name": "party",
+  "version": "1.0.0",
+  "description": "PartyScripts",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jamesgrubb/party.git"
+  },
+  "keywords": [
+    "p5.js"
+  ],
+  "author": "James Grubb",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jamesgrubb/party/issues"
+  },
+  "homepage": "https://github.com/jamesgrubb/party#readme",
+  "dependencies": {
+    "express": "^4.16.2"
+  }
+}
