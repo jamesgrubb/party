@@ -4,7 +4,8 @@
   "description": "PartyScripts",
   "main": "app.js",
   "scripts": {
-    "serve": "nodemon app.js"
+    "serve": "nodemon app.js",
+    "start": "node app.js"
   },
   "repository": {
     "type": "git",
