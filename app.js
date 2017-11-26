@@ -10,11 +10,10 @@ app.get('/', function(req, res){
     res.sendFile(__dirname + '/public/index.html');
   });
 
-io.on('connection' , function(socket){
+io.sockets.on('connection' , function(socket){
     console.log('user connected')
     console.log(socket.id)
-    socket.on('mouse',mouseMsg);
-    function mouseMsg(data){
-        console.log(data)
-    }
+    socket.on('mouse',function(data){
+    socket.broadcast.emit('mouse' , data)    
+    });
 })
